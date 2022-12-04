@@ -422,18 +422,18 @@ img {
   background-color: var(--accent-color);
 }
 
-.social-footer {
+.footer__list {
   display: flex;
 }
 
-.social-links-footer {
+.footer__links {
   width: 44px;
   height: 44px;
   margin-right: 10px;
   cursor: pointer;
 }
 
-.social-link-footer {
+.footer__link {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -446,18 +446,18 @@ img {
     background-color var(--time-function) var(--timing-function);
 }
 
-.social-icon-footer {
+.footer__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.social-link-footer:hover,
-.social-link-footer:focus {
+.footer__link:hover,
+.footer__link:focus {
   background-color: var(--accent-color);
 }
 
-.join {
+.footer__subscription {
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: 700;
