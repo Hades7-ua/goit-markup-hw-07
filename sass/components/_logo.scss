@@ -1,0 +1,14 @@
+.header__logo {
+    margin-right: 93px;
+    color: var(--title-text-color);
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.header__logo.link span {
+    color: var(--accent-color);
+}

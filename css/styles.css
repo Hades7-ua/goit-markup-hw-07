@@ -72,12 +72,17 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-list {
+.header__list {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
   margin-right: 93px;
   color: var(--title-text-color);
   font-family: "Raleway", sans-serif;
@@ -88,11 +93,11 @@ img {
   letter-spacing: 0.03em;
 }
 
-.header-logo.link span {
+.header__logo.link span {
   color: var(--accent-color);
 }
 
-.footer-logo {
+.footer__logo {
   color: var(--primary-white-color);
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -102,7 +107,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.footer-logo.link span {
+.footer__logo.link span {
   margin-bottom: 20px;
   color: var(--accent-color);
 }
@@ -121,24 +126,38 @@ img {
 
 /* site - nav */
 
-.nav-container {
+.site-nav__list {
   display: flex;
   align-items: center;
 }
-.site-nav {
-  display: flex;
-  align-items: center;
+.site-nav__menu,
+.auth-nav__menu {
+  position: relative;
 }
 
-.site-nav .item + .item {
+.site-nav__link::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--accent-color);
+  width: 100%;
+  height: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  transition: opacity var(--time-function) var(--timing-function);
+}
+
+.site-nav__list .list__item + .list__item {
   margin-left: 50px;
 }
 
-.menu-link {
+.site-nav__link {
   color: var(--accent-color);
 }
 
-.site-nav .link {
+.site-nav__list .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -150,8 +169,8 @@ img {
   letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__list .link:hover,
+.site-nav__list .link:focus {
   color: var(--accent-color);
   transition: color var(--time-function) var(--timing-function);
 }
@@ -160,7 +179,8 @@ img {
   display: flex;
   margin-left: auto;
 }
-.auth-nav .item + .item {
+
+.auth-nav .list__item + .list__item {
   margin-left: 50px;
 }
 
@@ -178,32 +198,14 @@ img {
   transition: color var(--time-function) var(--timing-function);
 }
 
-.auth-nav-icon {
+.auth-nav__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.nav-link {
+.auth-nav__link {
   display: flex;
   align-items: center;
-}
-
-.menu-nav {
-  position: relative;
-}
-
-.menu-link::after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: var(--accent-color);
-  width: 100%;
-  height: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  transition: opacity var(--time-function) var(--timing-function);
 }
 
 /* hero */
@@ -228,7 +230,7 @@ img {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin: 0 auto 30px;
   font-weight: 900;
@@ -242,7 +244,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-list {
+.section__list {
   margin: 0px;
   padding-bottom: 10px;
   color: var(--title-text-color);
@@ -252,7 +254,7 @@ img {
   text-transform: uppercase;
 }
 
-.section-title {
+.section__title {
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.16;
@@ -262,34 +264,34 @@ img {
   margin-top: 0px;
 }
 
-.section-text {
+.section__text {
   margin: 0px;
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
 
-.benefits {
+.examples {
   padding-bottom: 94px;
 }
 
-.our-advantages {
+/* .advantages {
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
 }
 
-.our-advantages .item {
+.advantages .list__item {
   width: 270px;
 }
 
-.advantages {
+.advantages__icon {
   border-radius: 4px;
   background-color: var(--team-list-color);
   text-align: center;
   margin-bottom: 30px;
   padding: 25px 100px;
-}
+} */
 
 .works,
 .worker {
@@ -312,7 +314,7 @@ img {
   display: block;
 }
 
-.item-thumb {
+.works__item {
   position: relative;
 }
 
@@ -337,7 +339,7 @@ img {
   opacity: 1;
 } */
 
-.team-list {
+.team {
   background-color: var(--team-list-color);
 }
 
