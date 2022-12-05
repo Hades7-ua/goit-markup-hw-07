@@ -407,7 +407,7 @@
         </address>
         </div>
         <div class="footer__social"> 
-          <p class="footer__subscription">приєднуйтесь</p>
+          <p class="footer__join">приєднуйтесь</p>
             <ul class="footer__list list">
                 <li class="footer__links">
                   <a href=""class="footer__link">
@@ -439,12 +439,12 @@
                 </li>
               </ul>        
             </div>
-            <div class="test">
-              <p class="join-footer">підпишіться на розсилку</p>
-              <form class="form">
-                <input type="email" name="email" placeholder="E-mail" class="input-email" required>
-          <button type="submit" class="button-submit">Підписатися
-          <svg width="24" height="24" class="telegram">
+            <div class="subscription">
+              <p class="footer__subscription">підпишіться на розсилку</p>
+              <form class="footer__form">
+                <input type="email" name="email" placeholder="E-mail" class="footer__email" required>
+          <button type="submit" class="button__submit">Підписатися
+          <svg width="24" height="24" class="footer__telegram">
             <use href="./images/symbol-defs.svg#icon-telegram"></use>
           </svg>
           </button>
@@ -457,42 +457,43 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-modal" data-modal-close>
-          <svg class="close-icon" width="18" height="18">
+        <button class="modal__close" data-modal-close>
+          <svg class="modal__close-icon" width="18" height="18">
           <use href="./images/symbol-defs.svg#icon-button-close"></use> 
         </svg>
       </button>
-      <p class="title-modal">Залиште свої дані, ми Вам передзвонимо</p>
-      <form class="form-modal">
-        <label for="name" class="form-label input-box"><span class="input-name">Ім'я</span> 
-          <input type="text" name="name" class="input-modal" required>
-          <svg width="18" height="18" class="input-icon">
+      <p class="modal__title">Залиште свої дані, ми Вам передзвонимо</p>
+      <form class="modal__form">  
+
+        <label for="name" class="modal__form-label modal__input-box"><span class="modal__input-name">Ім'я</span> 
+          <input type="text" name="name" class="modal__input" required>
+          <svg width="18" height="18" class="modal__input-icon">
             <use href="./images/symbol-defs.svg#icon-person-black"></use>
           </svg>
         </label>
-        <label for="tel" class="form-label input-box"><span class="input-name">Телефон</span> 
-          <input type="tel" name="email" class="input-modal" required>
-          <svg width="18" height="18" class="input-icon">
+        <label for="tel" class="modal__form-label modal__input-box"><span class="modal__input-name">Телефон</span> 
+          <input type="tel" name="email" class="modal__input" required>
+          <svg width="18" height="18" class="modal__input-icon">
             <use href="./images/symbol-defs.svg#icon-phone-black"></use>
           </svg>
         </label>
-        <label for="tel" class="form-label input-box"><span class="input-name">Пошта</span> 
-          <input type="tel" name="email" class="input-modal" required>
-          <svg width="18" height="18" class="input-icon">
+        <label for="tel" class="modal__form-label modal__input-box"><span class="modal__input-name">Пошта</span> 
+          <input type="tel" name="email" class="modal__input" required>
+          <svg width="18" height="18" class="modal__input-icon">
             <use href="./images/symbol-defs.svg#icon-email-black"></use>
           </svg>
         </label>
-        <label for="сomment" class="form-label input-box"><span class="input-name">Коментар</span> </label>
-        <textarea name=""  placeholder="Введіть тест" class="input-modal textarea"></textarea>
+        <label for="сomment" class="modal__form-label modal__input-box"><span class="modal__input-name">Коментар</span> </label>
+        <textarea name=""  placeholder="Введіть тест" class="modal__input textarea"></textarea>
         
         <div class="checkbox">
-              <label class="label-checkbox"> 
-                  <input type="checkbox" name="checkbox" value="agree" class="input-checkbox" required>
-                  <span class="checkbox-icon"></span> Погоджуюсь з розсилкою та приймаю
-                  <a href="" class="modal-link">Умови договору</a>
+              <label class="checkbox__label"> 
+                  <input type="checkbox" name="checkbox" value="agree" class="checkbox__input" required>
+                  <span class="checkbox__icon"></span> Погоджуюсь з розсилкою та приймаю
+                  <a href="" class="modal__link">Умови договору</a>
                 </label>
               </div>
-        <button type="submit" class="button-submit button-modal">Відправити</button>
+        <button type="submit" class="button__submit button__modal">Відправити</button>
       </form>
       </div>
       

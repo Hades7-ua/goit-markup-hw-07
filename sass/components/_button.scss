@@ -14,3 +14,31 @@
     transition: color var(--time-function) var(--timing-function);
 }
 
+.button__submit{
+    display: flex;
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        font-family: inherit;
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        margin-left: 12px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 1px solid var(--accent-color);
+        align-items: center;
+        justify-content: center;
+}
+
+.button__modal {
+    margin: auto;
+}
+
+.submit {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-right: 10px;
+    align-items: center;
+}

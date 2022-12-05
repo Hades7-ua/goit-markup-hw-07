@@ -55,7 +55,7 @@
     margin-left: 70px;
 }
 
-.footer__subscription {
+.footer__join {
     color: var(--primary-white-color);
     font-style: normal;
     font-weight: 700;
@@ -99,4 +99,47 @@
     width: 20px;
         height: 20px;
         fill: currentColor;
+}
+
+.subscription {
+    margin-left: 93px;
+}
+
+.footer__subscription{
+    color: var(--primary-white-color);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+}
+
+.footer__form{
+    display: flex;
+        align-items: baseline;
+}
+
+.footer__email {
+    min-width: 360px;
+        height: 50px;
+        padding-left: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: inherit;
+        cursor: pointer;
+        &:focus{
+            outline: 1px solid var(--accent-color);
+            color: var(--primary-white-color);
+            transition: color var(--time-function) var(--timing-function);
+        }
+
+}
+
+.footer__telegram{
+    margin-left: 10px;
 }
