@@ -32,6 +32,14 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform $time-function $timing-function;
+    &__title {
+            font-weight: 700;
+            line-height: calc(23 / 20);
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-bottom: 12px;
+            color: $title-text-color;
+        }
 }
 
 .modal__close {
@@ -55,14 +63,7 @@
         }
 }
 
-.modal__title{
-    font-weight: 700;
-        line-height: calc(23 / 20);
-        text-align: center;
-        letter-spacing: 0.03em;
-        margin-bottom: 12px;
-        color: $title-text-color;
-}
+
 
 
 .modal__form {
@@ -137,32 +138,35 @@
 
 .checkbox {
     margin-bottom: 30px;
+    &__label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $primary-text-color;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: calc(24 / 14);
+            letter-spacing: 0.03em;
+        }
+
+                &__input {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    margin: -1px;
+                    border: 0;
+                    padding: 0;
+                    white-space: nowrap;
+                    clip-path: inset(100%);
+                    clip: rect(0 0 0 0);
+                    overflow: hidden;
+                    margin-left: 10px;
+                }
 }
 
-.checkbox__label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $primary-text-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-}
 
-.checkbox__input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    margin-left: 10px;
-}
+
+
 
 .checkbox__input:checked + .checkbox__icon {
     background-color: $accent-color;
