@@ -24,7 +24,12 @@
             background-color $time-function $timing-function,
             border $time-function $timing-function;
 
-    
+        &:hover,
+            &:focus {
+                color: $accent-color;
+                background-color: var(--primary-white-color);
+                border: 1px solid $accent-color;
+            }
 
     }
 
