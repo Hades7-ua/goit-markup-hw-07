@@ -162,26 +162,28 @@
                     overflow: hidden;
                     margin-left: 10px;
                 }
+                                &__input:checked + &__icon {
+                                    background-color: $accent-color;
+                                    background-image: url(../images/check.svg);
+                                    background-size: contain;
+                                    background-origin: border-box;
+                                    border-color: $accent-color;
+                                    transition: background-color $time-function $time-function;
+                                }
+                                                                &__icon {
+                                                                    width: 16px;
+                                                                    height: 15px;
+                                                                    border: 2px solid $title-text-color;
+                                                                    border-radius: 4px;
+                                                                    margin-right: 10px;
+                                                                }
 }
 
 
 
 
 
-.checkbox__input:checked + .checkbox__icon {
-    background-color: $accent-color;
-    background-image: url(../images/check.svg);
-    background-size: contain;
-    background-origin: border-box;
-    border-color: $accent-color;
-    transition: background-color $time-function $time-function;
-}
 
-.checkbox__icon {
-    width: 16px;
-    height: 15px;
-    border: 2px solid $title-text-color;
-    border-radius: 4px;
-    margin-right: 10px;
-}
+
+
 

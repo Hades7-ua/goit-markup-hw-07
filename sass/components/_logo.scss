@@ -7,8 +7,8 @@
     font-size: 26px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    &__logo.link span {
+            color: $accent-color;
+        }
 }
 
-.header__logo.link span {
-    color: $accent-color;
-}
