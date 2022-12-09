@@ -1,17 +1,19 @@
 .header {
     margin: 0px;
     border-bottom: 1px solid #ececec;
+    &__list {
+            display: flex;
+            align-items: center;
+        }
+                &__nav {
+                    display: flex;
+                    align-items: center;
+                }
 }
 
-.header__list {
-    display: flex;
-    align-items: center;
-}
 
-.header__nav {
-    display: flex;
-    align-items: center;
-}
+
+
 
 .site-nav__list {
     display: flex;
@@ -91,10 +93,11 @@
     &:focus {
         color: $accent-color;
     }
+        &__icon {
+            margin-right: 10px;
+            fill: currentColor;
+        }
 }
 
-.auth-nav__icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
+
 

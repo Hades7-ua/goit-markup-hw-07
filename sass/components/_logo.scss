@@ -1,2 +1,15 @@
+.header__logo {
+    margin-right: 93px;
+    color: $title-text-color;
+    font-family: $font-Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 
+    &__logo.link span {
+        color: $accent-color;
+    }
+}
 
