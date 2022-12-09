@@ -1,3 +1,8 @@
+
+.examples{
+    padding-bottom: 94px;
+}
+
 .works{
     display: flex;
     padding-left: 0px;
@@ -17,10 +22,7 @@
             opacity: 1;
             transition: color $time-function $timing-function;
             text-transform: uppercase;
-    
-        }
-
-    
+            }
 }
 
 
